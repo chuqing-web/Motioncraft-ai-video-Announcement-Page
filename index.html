@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="MotionCraft — AI Motion Studio. Prompt → editable Canvas code → short films or print-ready anime page comics. Local Windows app with MCP agent control." />
+  <title>MotionCraft · AI Motion Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="MotionCraft home">
+        <span class="brand-mark-text" aria-hidden="true">MC</span>
+        MotionCraft
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features" data-i18n="nav.features">Features</a></li>
+        <li><a href="#pipelines" data-i18n="nav.pipelines">Pipelines</a></li>
+        <li><a href="#studio" data-i18n="nav.studio">Studio</a></li>
+        <li><a href="#mcp" data-i18n="nav.mcp">MCP</a></li>
+        <li><a href="#flow" data-i18n="nav.flow">Flow</a></li>
+        <li><a href="#platform" data-i18n="nav.platform">Platform</a></li>
+      </ul>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" class="is-active" aria-pressed="true">EN</button>
+        <button type="button" data-lang-btn="zh" aria-pressed="false">中</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img class="hero-media-img" src="assets/images/video-effect.png" alt="" width="1920" height="1080" />
+        <div class="hero-scrim"></div>
+      </div>
+      <div class="container hero-copy">
+        <p class="brand-hero reveal">MotionCraft</p>
+        <h1 class="reveal d1" data-i18n="hero.title">Prompt → editable Canvas code → short film or print-ready anime pages</h1>
+        <p class="hero-sub reveal d2" data-i18n="hero.sub">A Windows AI creation workbench: describe a story, let your LLM write runnable html/css/js for every shot or panel, then preview, revise, and export locally — transparent, editable, under your control.</p>
+        <div class="cta-row reveal d3">
+          <a class="btn btn-primary" href="#features" data-i18n="hero.ctaPrimary">Explore capabilities</a>
+          <a class="btn btn-ghost" href="#mcp" data-i18n="hero.ctaSecondary">Agent Bridge + MCP</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="why.eyebrow">Core capabilities</p>
+          <h2 data-i18n="why.title">Code paints · Dual media · Agent-drive</h2>
+        </div>
+        <ol class="feature-list">
+          <li class="feature-item reveal">
+            <span class="feature-num">01</span>
+            <div>
+              <h3 data-i18n="why.card1.title">Code is the picture</h3>
+              <p data-i18n="why.card1.body">The model writes drawing logic — not a sealed media blob. Read it, edit it, regenerate one shot or panel with continuity.</p>
+            </div>
+          </li>
+          <li class="feature-item reveal d1">
+            <span class="feature-num">02</span>
+            <div>
+              <h3 data-i18n="why.card2.title">AI short films</h3>
+              <p data-i18n="why.card2.body">Node graph + timeline: outline, per-shot Canvas code driven by clock t, camera / FX / character layers — export MP4 or WebM.</p>
+            </div>
+          </li>
+          <li class="feature-item reveal d2">
+            <span class="feature-num">03</span>
+            <div>
+              <h3 data-i18n="why.card3.title">AI anime page comics</h3>
+              <p data-i18n="why.card3.body">AI decides panel count, size, and layout; streams still-frame code with manga craft — export PNG sequences or multi-page PDF.</p>
+            </div>
+          </li>
+          <li class="feature-item reveal d3">
+            <span class="feature-num">04</span>
+            <div>
+              <h3 data-i18n="why.card4.title">Bring your own model</h3>
+              <p data-i18n="why.card4.body">Doubao, DeepSeek, OpenAI, Anthropic, Ollama, or any OpenAI-compatible gateway. Keys stay on your machine (DPAPI) — never plain in the project file.</p>
+            </div>
+          </li>
+          <li class="feature-item reveal">
+            <span class="feature-num">05</span>
+            <div>
+              <h3 data-i18n="why.card5.title">MCP agent control</h3>
+              <p data-i18n="why.card5.body">Keep the app running; Cursor, Doubao, or your scripts drive the same director pipeline and encrypted .vd project truth.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="dual-showcase" id="pipelines">
+      <div class="container">
+        <div class="section-head reveal section-head-wide">
+          <p class="eyebrow" data-i18n="dual.eyebrow">Two product lines · one philosophy</p>
+          <h2 data-i18n="dual.title">Short film motion · print-ready page comics</h2>
+          <p class="section-sub" data-i18n="dual.sub">Video aims for cinematic multi-system motion on a clock. Comics aim for ink, screentone, and designed grids as still frames. Same studio; two quality constitutions on purpose.</p>
+        </div>
+      </div>
+      <div class="dual-bleed">
+        <figure class="dual-panel reveal">
+          <img src="assets/images/video-effect.png" alt="Video preview with camera and atmospheric effects" width="1200" height="800" loading="lazy" />
+          <figcaption>
+            <span data-i18n="dual.tagVideo">Timeline video</span>
+            <p data-i18n="dual.noteVideo">Scene nodes · clock t · camera / FX / character · MP4 / WebM</p>
+          </figcaption>
+        </figure>
+        <figure class="dual-panel reveal d2">
+          <img src="assets/images/comic-examples.png" alt="AI-generated anime page comic panels" width="1200" height="800" loading="lazy" />
+          <figcaption>
+            <span data-i18n="dual.tagComic">Anime page comic</span>
+            <p data-i18n="dual.noteComic">Page → panel → shot · AI layout · PNG / PDF</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="mcp-section" id="mcp">
+      <div class="container">
+        <div class="section-head reveal section-head-wide">
+          <p class="eyebrow" data-i18n="mcp.eyebrow">Agent Bridge + MCP</p>
+          <h2 data-i18n="mcp.title">Let external agents drive the running studio</h2>
+          <p class="section-sub" data-i18n="mcp.sub">With MotionCraft.exe running, point Cursor or another MCP client at the local bridge. Reasoning stays in the agent; MotionCraft executes node edits, directors, preview, and export on the same quality pipeline as the UI.</p>
+        </div>
+        <div class="mcp-grid reveal d1">
+          <article class="mcp-point">
+            <span class="mcp-label" data-i18n="mcp.p1.label">Live control</span>
+            <h3 data-i18n="mcp.p1.title">Localhost bridge</h3>
+            <p data-i18n="mcp.p1.body">Health check, project read/write, add nodes, connect edges, update props — humans and agents share one encrypted .vd graph.</p>
+          </article>
+          <article class="mcp-point">
+            <span class="mcp-label" data-i18n="mcp.p2.label">Directors</span>
+            <h3 data-i18n="mcp.p2.title">Full or single-piece regen</h3>
+            <p data-i18n="mcp.p2.body">run_director / run_comic_director for full pipelines; scene, character, effect, or comic_shot directors to fix one piece with context.</p>
+          </article>
+          <article class="mcp-point">
+            <span class="mcp-label" data-i18n="mcp.p3.label">Export</span>
+            <h3 data-i18n="mcp.p3.title">Preview &amp; ship</h3>
+            <p data-i18n="mcp.p3.body">Trigger preview and export video or comic pages from the agent — outputs land beside your project when possible.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cap-section" id="studio">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="cap.eyebrow">Inside the studio</p>
+          <h2 data-i18n="cap.title">From prompt to editable assets</h2>
+        </div>
+        <div class="cap-stack">
+          <article class="cap-row reveal">
+            <div class="cap-visual">
+              <img src="assets/images/ai-generation.png" alt="AI director streaming outline and per-shot code" width="640" height="360" loading="lazy" />
+            </div>
+            <div class="cap-copy">
+              <h3 data-i18n="cap.ai.title">AI Director — video</h3>
+              <p data-i18n="cap.ai.body">Outline honors your shot count and durations. Each scene returns setup/draw driven by t. Compile + offscreen trial; no Math.random — seed instead. Failures rewrite for several rounds before landing on the graph.</p>
+            </div>
+          </article>
+          <article class="cap-row reverse reveal d1">
+            <div class="cap-visual">
+              <img src="assets/images/comic-examples.png" alt="Anime page comic with designed panel layout" width="640" height="360" loading="lazy" />
+            </div>
+            <div class="cap-copy">
+              <h3 data-i18n="cap.comic.title">Comic Director — page manga</h3>
+              <p data-i18n="cap.comic.body">Four-level narrative cards, then AI-owned panel layouts (no lazy equal grid). Stream still-frame code panel by panel with neighbor context; compose pages for PNG or PDF. v1 targets page comics, not vertical strips.</p>
+            </div>
+          </article>
+          <article class="cap-row reveal d2">
+            <div class="cap-visual">
+              <img src="assets/images/video-effect.png" alt="Node studio with timeline and layered effects" width="640" height="360" loading="lazy" />
+            </div>
+            <div class="cap-copy">
+              <h3 data-i18n="cap.nodes.title">Node-based workbench</h3>
+              <p data-i18n="cap.nodes.body">Library on the left, graph in the center, props and generated code on the right, timeline or page-flip below. Video edges: sequence and attach. Comic edges: sequence, contain, compose.</p>
+            </div>
+          </article>
+          <article class="cap-row reverse reveal">
+            <div class="cap-visual">
+              <img src="assets/images/ai-generation.png" alt="Local project vault and model settings" width="640" height="360" loading="lazy" />
+            </div>
+            <div class="cap-copy">
+              <h3 data-i18n="cap.vault.title">Local .vd vault &amp; privacy</h3>
+              <p data-i18n="cap.vault.body">Projects are encrypted single-file vaults. After code exists you can preview and export offline. Model keys live in AppData under DPAPI — MCP never returns plaintext secrets.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="flow" class="pipeline">
+      <div class="container">
+        <div class="section-head section-head-pipe reveal">
+          <p class="eyebrow" data-i18n="pipe.eyebrow">Creation flow</p>
+          <h2 class="pipe-title" data-i18n="pipe.title">Prompt → Outline → Code → Validate → Preview → Export</h2>
+        </div>
+        <ol class="pipe-track">
+          <li class="pipe-step reveal"><span class="pipe-idx">1</span><h3 data-i18n="pipe.s1">Prompt</h3><p data-i18n="pipe.s1d">Story, style, beats</p></li>
+          <li class="pipe-step reveal d1"><span class="pipe-idx">2</span><h3 data-i18n="pipe.s2">Outline</h3><p data-i18n="pipe.s2d">Shots or page/panel cards</p></li>
+          <li class="pipe-step reveal d2"><span class="pipe-idx">3</span><h3 data-i18n="pipe.s3">Code</h3><p data-i18n="pipe.s3d">html / css / js per unit</p></li>
+          <li class="pipe-step reveal d3"><span class="pipe-idx">4</span><h3 data-i18n="pipe.s4">Validate</h3><p data-i18n="pipe.s4d">Compile &amp; offscreen trial</p></li>
+          <li class="pipe-step reveal d4"><span class="pipe-idx">5</span><h3 data-i18n="pipe.s5">Preview</h3><p data-i18n="pipe.s5d">Timeline scrub or page flip</p></li>
+          <li class="pipe-step reveal"><span class="pipe-idx">6</span><h3 data-i18n="pipe.s6">Export</h3><p data-i18n="pipe.s6d">MP4 / WebM or PNG / PDF</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="platform" id="platform">
+      <div class="container platform-grid">
+        <div class="reveal">
+          <p class="eyebrow" data-i18n="plat.eyebrow">Platform</p>
+          <h2 data-i18n="plat.title">Native Windows studio</h2>
+          <p data-i18n="plat.body">WinForms + WebView2 desktop app. Ordinary laptop — no dedicated AI GPU, no vendor-locked text-to-video subscription. You pick the model and the bill.</p>
+        </div>
+        <ul class="reveal d2">
+          <li data-i18n="plat.li1">Form · Windows desktop (.exe)</li>
+          <li data-i18n="plat.li2">Project · encrypted .vd vault</li>
+          <li data-i18n="plat.li3">Agent · local MCP + HTTP bridge</li>
+          <li data-i18n="plat.li4">Stack · .NET 8 · WebView2 · Canvas 2D</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-row">
+        <div>
+          <div class="brand brand-on-dark">
+            <span class="brand-mark-text" aria-hidden="true">MC</span>
+            MotionCraft
+          </div>
+          <div data-i18n="footer.tag">AI short films · anime page comics · MCP on Windows</div>
+        </div>
+        <div class="footer-links">
+          <span data-i18n="footer.github">GitHub · Coming soon</span>
+        </div>
+      </div>
+      <div class="footer-copy" data-i18n="footer.copy">© 2026 MotionCraft · AI Motion Studio</div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
